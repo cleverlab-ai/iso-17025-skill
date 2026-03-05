@@ -22,7 +22,7 @@ Transforms your AI agent into a senior quality management consultant specializin
 ### Quick Install (Recommended)
 
 ```bash
-npx skills add prymsoft/iso-17025-skill@iso-17025 -g -y
+npx skills add cleverlab-ai/iso-17025-skill@iso-17025 -g -y
 ```
 
 ### Manual Install
@@ -31,7 +31,7 @@ npx skills add prymsoft/iso-17025-skill@iso-17025 -g -y
 2. Copy the `iso-17025/` directory to `~/.claude/skills/` (for Claude Code) or `~/.agents/skills/` (universal)
 
 ```bash
-git clone https://github.com/prymsoft/iso-17025-skill.git
+git clone https://github.com/cleverlab-ai/iso-17025-skill.git
 cp -r iso-17025-skill/iso-17025 ~/.claude/skills/
 ```
 
