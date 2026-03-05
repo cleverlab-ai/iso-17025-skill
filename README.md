@@ -15,7 +15,7 @@ Transforms your AI agent into a senior quality management consultant specializin
 - Measurement uncertainty evaluation support
 - Procedure writing templates
 - LIMS/software compliance guidance
-- Bilingual support (Polish/English)
+- Trilingual support (English/Polish/German)
 
 ## Installation
 
@@ -31,6 +31,12 @@ npx skills add cleverlab-ai/iso-17025-skill@iso-17025 -g -y
 npx skills add cleverlab-ai/iso-17025-skill@iso-17025-pl -g -y
 ```
 
+### Deutsche Version (Schnellinstallation)
+
+```bash
+npx skills add cleverlab-ai/iso-17025-skill@iso-17025-de -g -y
+```
+
 ### Manual Install
 
 1. Clone or download this repository
@@ -44,11 +50,14 @@ cp -r iso-17025-skill/iso-17025 ~/.claude/skills/
 
 # Polski
 cp -r iso-17025-skill/iso-17025-pl ~/.claude/skills/
+
+# Deutsch
+cp -r iso-17025-skill/iso-17025-de ~/.claude/skills/
 ```
 
 ### Verify Installation
 
-In Claude Code, type `/iso-17025` (English) or `/iso-17025-pl` (Polski) — if the skill appears in autocomplete, it's installed correctly.
+In Claude Code, type `/iso-17025` (English), `/iso-17025-pl` (Polski) or `/iso-17025-de` (Deutsch) — if the skill appears in autocomplete, it's installed correctly.
 
 ## Usage Examples
 
@@ -121,7 +130,15 @@ obejmującą wymagania dotyczące personelu (6.2)
 i wyposażenia (6.4).
 ```
 
-### 10. Conformity Statements
+### 10. Deutsche Version — Auditvorbereitung
+
+```
+/iso-17025-de Bereiten Sie mich auf ein DAkkS-Überwachungsaudit
+nächste Woche vor. Schwerpunkt auf Abschnitt 7
+(Prozessanforderungen).
+```
+
+### 11. Conformity Statements
 
 ```
 /iso-17025 Explain decision rules for conformity statements
@@ -147,14 +164,23 @@ iso-17025-pl/                             # Wersja polska
     checklista-audytowa.md              # Szczegółowa checklista audytowa
     szablon-analizy-luk.md              # Szablon macierzy analizy luk
     przewodnik-walidacji.md             # Przewodnik planowania walidacji metod
+
+iso-17025-de/                             # Deutsche Version
+  SKILL.md                              # Hauptanweisungen des Skills
+  references/
+    normenstruktur.md                   # Vollständige Normenstruktur (alle Abschnitte)
+    audit-checkliste.md                 # Detaillierte Audit-Vorbereitungscheckliste
+    gap-analyse-vorlage.md              # Gap-Analyse-Matrixvorlage
+    validierungsleitfaden.md            # Leitfaden zur Methodenvalidierung
 ```
 
 ## Prompt → Response Examples
 
-See full examples with detailed AI responses in both languages:
+See full examples with detailed AI responses in all three languages:
 
 - **[English examples](examples/examples-en.md)** — 8 complete prompt/response pairs
 - **[Przykłady po polsku](examples/examples-pl.md)** — 8 kompletnych par prompt/odpowiedź
+- **[Deutsche Beispiele](examples/examples-de.md)** — 8 vollständige Prompt/Antwort-Paare
 
 ### Example topics covered:
 1. **Audit preparation** — PCA surveillance audit checklist for clause 7
@@ -177,7 +203,7 @@ See full examples with detailed AI responses in both languages:
 
 ## Important Note
 
-This skill provides expert guidance based on the publicly available structure and requirements of ISO/IEC 17025:2017. It does **not** contain the copyrighted full text of the standard. For the official standard text, purchase from [ISO](https://www.iso.org/standard/66912.html) or your national standards body (e.g., [PKN](https://www.pkn.pl) in Poland).
+This skill provides expert guidance based on the publicly available structure and requirements of ISO/IEC 17025:2017. It does **not** contain the copyrighted full text of the standard. For the official standard text, purchase from [ISO](https://www.iso.org/standard/66912.html) or your national standards body (e.g., [PKN](https://www.pkn.pl) in Poland, [DIN](https://www.din.de) in Germany).
 
 ## License
 
