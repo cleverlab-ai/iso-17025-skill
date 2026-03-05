@@ -149,6 +149,23 @@ iso-17025-pl/                             # Wersja polska
     przewodnik-walidacji.md             # Przewodnik planowania walidacji metod
 ```
 
+## Prompt → Response Examples
+
+See full examples with detailed AI responses in both languages:
+
+- **[English examples](examples/examples-en.md)** — 8 complete prompt/response pairs
+- **[Przykłady po polsku](examples/examples-pl.md)** — 8 kompletnych par prompt/odpowiedź
+
+### Example topics covered:
+1. **Audit preparation** — PCA surveillance audit checklist for clause 7
+2. **Gap analysis** — Roadmap for a new 5-person water testing lab
+3. **Method validation plan** — Heavy metals (Pb, Cd, As, Hg) by ICP-MS in drinking water
+4. **Measurement uncertainty** — Complete uncertainty budget for pH measurement
+5. **Procedure writing** — Nonconforming work procedure (clause 7.10) with flowchart
+6. **LIMS compliance** — Vendor evaluation checklist for clause 7.11
+7. **Decision rules** — Conformity statements with guard banding (clause 7.8.6)
+8. **Internal audit plan** — 12-month cycle covering all clauses
+
 ## Who Is This For?
 
 - **Quality Managers** preparing for accreditation or surveillance audits
