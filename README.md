@@ -19,25 +19,36 @@ Transforms your AI agent into a senior quality management consultant specializin
 
 ## Installation
 
-### Quick Install (Recommended)
+### English Version (Quick Install)
 
 ```bash
 npx skills add cleverlab-ai/iso-17025-skill@iso-17025 -g -y
 ```
 
+### Wersja polska (Szybka instalacja)
+
+```bash
+npx skills add cleverlab-ai/iso-17025-skill@iso-17025-pl -g -y
+```
+
 ### Manual Install
 
 1. Clone or download this repository
-2. Copy the `iso-17025/` directory to `~/.claude/skills/` (for Claude Code) or `~/.agents/skills/` (universal)
+2. Copy the desired language directory to `~/.claude/skills/` (for Claude Code) or `~/.agents/skills/` (universal)
 
 ```bash
 git clone https://github.com/cleverlab-ai/iso-17025-skill.git
+
+# English
 cp -r iso-17025-skill/iso-17025 ~/.claude/skills/
+
+# Polski
+cp -r iso-17025-skill/iso-17025-pl ~/.claude/skills/
 ```
 
 ### Verify Installation
 
-In Claude Code, type `/iso-17025` — if the skill appears in autocomplete, it's installed correctly.
+In Claude Code, type `/iso-17025` (English) or `/iso-17025-pl` (Polski) — if the skill appears in autocomplete, it's installed correctly.
 
 ## Usage Examples
 
@@ -102,12 +113,12 @@ a 12-month cycle.
 according to 8.9.2? Create an agenda template.
 ```
 
-### 9. Polish Language Support
+### 9. Wersja polska — Przygotowanie do audytu
 
 ```
-/iso-17025 Przygotuj checklistę do audytu wewnętrznego
+/iso-17025-pl Przygotuj checklistę do audytu wewnętrznego
 obejmującą wymagania dotyczące personelu (6.2)
-i wyposażenia (6.4). Po polsku.
+i wyposażenia (6.4).
 ```
 
 ### 10. Conformity Statements
@@ -121,13 +132,21 @@ guard banding, or other approaches?
 ## Skill Contents
 
 ```
-iso-17025/
+iso-17025/                                # English version
   SKILL.md                              # Main skill instructions
   references/
     standard-structure.md               # Full standard reference (all clauses)
     audit-checklist.md                  # Detailed audit preparation checklist
     gap-analysis-template.md            # Gap analysis matrix template
     validation-guide.md                 # Method validation planning guide
+
+iso-17025-pl/                             # Wersja polska
+  SKILL.md                              # Główne instrukcje skilla
+  references/
+    struktura-normy.md                  # Pełna struktura normy (wszystkie punkty)
+    checklista-audytowa.md              # Szczegółowa checklista audytowa
+    szablon-analizy-luk.md              # Szablon macierzy analizy luk
+    przewodnik-walidacji.md             # Przewodnik planowania walidacji metod
 ```
 
 ## Who Is This For?
